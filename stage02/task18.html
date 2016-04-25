@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task18</title>
+	<style type="text/css">
+	.input1{ width: 150px; }
+	#left-output{ margin-left: 20px; }
+	</style>
+</head>
+<body>
+	<div>
+		<input type="text" name="num" class="input1" id="num" >
+		<button id="left-input">左侧入</button>
+		<button id="right-input">右侧入</button>
+		<button id="left-output">左侧出</button>
+		<button id="right-output">右侧处</button>
+	</div>
+	<div id="showArray">
+		
+	</div>
+</body>
+<script type="text/javascript">
+	var array=[];
+	var show=document.getElementById('showArray');
+	var num=document.getElementById('num');
+
+	var li=document.getElementById('left-input');
+	var ri=document.getElementById('right-input');
+	var lo=document.getElementById('left-output');
+	var ro=document.getElementById('right-output');
+	addLoadEvent(isNum);
+	//检查输入合法性
+	function isNum(s){
+		if () {}
+
+	//左侧入函数
+	li.onclick=function() {
+		// body...
+		isNum(document.getElementById('num').value);
+		var count=array.unshift(document.getElementById('num').value.toString());
+		show.innerHTML=array.toString();
+		num.value='';
+		count=null;
+	}
+
+	//右侧入函数
+	ri.onclick=function() {
+		// body...
+		var count=array.push(document.getElementById('num').value.toString());
+		show.innerHTML=array.toString();
+		num.value='';
+		count=null;
+	}
+
+	//左侧出函数
+	lo.onclick=function() {
+		// body...
+		var count=array.shift();
+		show.innerHTML=array.toString();
+	}
+
+	//右测出函数
+	ro.onclick=function() {
+		// body...
+		var count=array.pop();
+		show.innerHTML=array.toString();
+	}
+</script>
+</html>

@@ -1,0 +1,58 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	padding: 20px;
+}
+.one , .two , .three , .four{
+	width: 150px;
+	margin: 20px;
+}
+
+.one{
+	
+	border: 1px solid #f00;
+	height: 120px;
+}
+.two{
+	border: 1px solid #f00;
+	height: 100px;
+}
+.three{
+	border: 1px solid #f00;
+	height: 40px;
+}
+.four{
+	border: 1px solid blue;
+	height: 200px;
+}
+@media all and (min-width: 641px) {
+
+	#container{
+		padding: 20px;
+		display: flex;
+		-webkit-display: flex;
+		
+		justify-content: space-between;
+		align-items: center;
+		border: 1px solid #ccc;
+	}
+}
+@media all and (max-width: 640px) {
+	#container{
+		
+		display: flex;
+		-webkit-display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		border: 1px solid #ccc;
+	}
+	.four{ order: 1; }
+	.one{ order: 2; }
+	.two{ order: 3; }
+	.three{ order: 4; }
+}
