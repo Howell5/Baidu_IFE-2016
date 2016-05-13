@@ -1,0 +1,242 @@
+/* ======== reset ======== */
+body,h1,h2,h3,h4,ul,li{margin: 0;padding: 0;}
+body{background-color: #F5F5F5;}
+nav a,h3,small,li,h4,time{font-family: "Microsoft Yahei";font-weight: 200;}
+h1,h2,a{font-family: "SimHei";}
+li{list-style: none;}
+a{font-size: 1rem;text-decoration: none;}
+ul{box-sizing: border-box;}
+
+
+/*======== header ========*/
+header {
+	text-align: center;
+	background-color: #91D4DA;
+	line-height: 4rem;
+}
+h1,header a {
+	display: inline-block;
+}
+header h1 {
+	font-size: 1.6rem;
+	color: #fff;
+}
+header a {
+	position: absolute;
+	left: 15px;
+	color: #fff;
+}
+
+/*======== nav ========*/
+nav {
+	height: 3.5rem;
+}
+nav ul {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+nav ul li {
+	display: block;
+	text-align: center;
+	height: 100%;
+	border-bottom: 3px;
+	flex: 1;
+}
+nav ul li a {
+	display: inline-block;
+	font-weight: 900;
+	width: 100%;
+	line-height: 3.5rem;
+	height: 3.3rem;
+	color: #666;
+}
+nav ul li .nav-active {
+	border-bottom: .2rem solid #8FD6DA;
+}
+
+/*======== home-page ========*/
+.home-page .banner img {
+	width: 100%;
+}
+.home-page .tag ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.home-page .tag li {
+	padding: 1rem 0;
+	text-align: center;
+	flex: 1;
+}
+.home-page .tag li img {
+	margin-bottom: 1rem;
+	width: 50%;
+}
+.home-page .tag li a {
+	color: #555;
+	text-align: center;
+}
+
+.home-page .columns ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 0 auto;
+	border-top: 2px solid #dedede;
+	align-items: center;
+	justify-content: space-around;
+}
+.home-page .columns ul li {
+	display: block;
+	margin: 1.2rem 0;
+	text-align: center;
+	font-size: 1rem;
+}
+.home-page .columns ul li h3 {
+	margin: .2rem 0 .5rem;
+}
+.home-page .columns ul li img {
+	width: 65%;
+}
+.home-page .columns ul li small {
+	display: block;
+	margin: .5rem 0;
+	color: #999;
+}
+
+/*======== module ========*/
+.module {
+	margin: 1.4rem 0;
+}
+.module h2 {
+	margin: 0 .8rem;
+	padding: .5rem 0;
+}
+.module .box {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	/*align-items: stretch;*/
+	justify-content: center;
+}
+.module .box img {
+	width: 100%
+	display: block;
+	margin: .6rem .8rem;
+	border: 2px solid #ddd;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+}
+.module .box ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex: 2;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.module .box ul li {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	text-align: center;
+	box-align: center;
+	align-items: center;
+	padding: 2.6rem 0;
+	justify-content: center;
+	background-color: #f1f1f1;
+	font-size: 1rem;
+	margin: .6rem .8rem .6rem 0;
+	flex: 1 40%;
+}
+
+/*======== article ========*/
+
+.article article {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem .8rem;
+	border-bottom: 1px solid #ddd;
+}
+article img {
+	display: block;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+}
+article div {
+	display: block;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+article div h2 {
+	margin: 0 .8rem;
+	padding: .5rem 0;
+	font-size: 1.4rem;
+	font-weight: 900;
+	color: #666;
+}
+article div aside {
+
+	margin: 0 .8rem;
+	padding: .5rem 0;
+	color: #ccc;
+	font-size: .7rem;
+}
+.a3 h2 {
+	margin: 0 .8rem;
+	padding: .5rem 0;
+	font-size: 1.4rem;
+	font-weight: 900;
+	color: #666;
+}
+.a3 div {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 0 .8rem;
+	align-items: center;
+	justify-content: center;
+}
+.a3 div img {
+	display: block;
+	flex: 1;
+	margin: 0 .2rem;
+	width: 75%;
+}
+.a3 div aside {
+	display: block;
+	margin: 0 .8rem;
+	padding: .5rem 0;
+	color: #ccc;
+	font-size: .7rem;
+}
